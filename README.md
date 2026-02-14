@@ -20,6 +20,9 @@ A Python-based secure chat application implementing modern cryptographic protoco
 - AES Encryption
 - RSA (extensible for digital signatures)
 
+## System Architecture
+![Architecture Diagram](assets/architecture.png)
+
 ## 🔐 Security Architecture
 
 1. Diffie-Hellman establishes shared secret
@@ -29,6 +32,8 @@ A Python-based secure chat application implementing modern cryptographic protoco
 5. Receiver decrypts locally
 
 No plaintext data is ever transmitted.
+
+![E2E Messaaging](assets/messaging.png)
 
 ## ▶️ How to Run
 
@@ -44,9 +49,13 @@ Run server:
 python server_gui.py
 ```
 
+![Server](assets/server-cmd.png)
 
 Run client:
 
 ```bash
 python client_gui.py
+
 ```
+
+![Client](assets/client-cmd.png)
